@@ -14,6 +14,7 @@
 		1192D5C11CACAB97009E3564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1192D5C01CACAB97009E3564 /* Assets.xcassets */; };
 		1192D5C41CACAB97009E3564 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1192D5C21CACAB97009E3564 /* LaunchScreen.storyboard */; };
 		1192D5CF1CACAB97009E3564 /* testTelephonyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1192D5CE1CACAB97009E3564 /* testTelephonyTests.m */; };
+		1192D5DA1CACABAD009E3564 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1192D5D91CACABAD009E3564 /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		1192D5CA1CACAB97009E3564 /* testTelephonyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTelephonyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1192D5CE1CACAB97009E3564 /* testTelephonyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTelephonyTests.m; sourceTree = "<group>"; };
 		1192D5D01CACAB97009E3564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1192D5D91CACABAD009E3564 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1192D5DA1CACABAD009E3564 /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +100,7 @@
 		1192D5B41CACAB96009E3564 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1192D5D91CACABAD009E3564 /* CoreTelephony.framework */,
 				1192D5B51CACAB96009E3564 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -160,6 +164,7 @@
 				TargetAttributes = {
 					1192D5B01CACAB96009E3564 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 76ZWVJ2G72;
 					};
 					1192D5C91CACAB97009E3564 = {
 						CreatedOnToolsVersion = 7.2;
@@ -339,9 +344,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = testTelephony/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tanlei.testTelephony;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ztf.testTelephony;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -350,9 +356,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = testTelephony/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tanlei.testTelephony;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ztf.testTelephony;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
